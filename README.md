@@ -8,6 +8,6 @@ Difficulty number 1 uses most advanced algorythm from the website above, difficu
 
 If you want only executable, use command
 ```bash
-make full
+make final
 ```
 
