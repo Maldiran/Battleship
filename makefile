@@ -3,11 +3,11 @@
 battleship: main.o computer.o actions.o
 	gcc -o battleship main.o computer.o actions.o
 actions.o: source/actions.c source/header.h
-	gcc -c source/actions.c -Wall -Wno-char-subscripts
+	gcc -Wall -Wno-char-subscripts -c source/actions.c
 computer.o: source/computer.c source/header.h
-	gcc -c source/computer.c -Wall -Wno-char-subscripts
+	gcc -Wall -Wno-char-subscripts -c source/computer.c
 main.o: source/main.c source/header.h
-	gcc -c source/main.c -Wall -Wno-format
+	gcc -Wall -Wno-format -c source/main.c
 
 clean:
 	rm -f main.o computer.o actions.o battleship
